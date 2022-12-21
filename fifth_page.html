@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>По света</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .clock {
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            margin-top: 300px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            position: fixed;
+            color: white;
+            font-family: Cursive;
+        }
+
+        .clock span {
+            width: 100px;
+            height: 80px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+
+        .clock .text {
+            height: 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+
+        }
+
+        .clock #ampm {
+            position: absolute;
+
+        }
+
+        .stars {
+            position: absolute;
+            left: 220px;
+        }
+
+        .stars1 {
+            position: absolute;
+            top: 1400px;
+            left: 220px;
+        }
+
+        body {
+            height: auto;
+            background-color: bisque;
+        }
+
+        .header {
+            background-image: url("images/istockphoto-1285159499-612x612.jpg");
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            height: 80px;
+            border-style: solid;
+            border-width: 1px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            box-shadow: 2px 5px 10px darkgreen;
+            border-color: darkgreen;
+            z-index: 100;
+        }
+
+        .logo {
+            height: 80px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+        .section {
+            font-size: 30px;
+            font-family: Cursive;
+            margin-top: 30px;
+            margin-left: 50px;
+            color: white;
+        }
+
+        .sidebar_left {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 80px;
+            width: 150px;
+            background-image: url("images/istockphoto-1285159499-612x612.jpg");
+            box-shadow: 2px 5px 10px darkgreen;
+        }
+
+        .sidebar_right {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            top: 80px;
+            width: 150px;
+            background-image: url("images/istockphoto-1285159499-612x612.jpg");
+            box-shadow: 2px 5px 10px darkgreen;
+        }
+
+        .socks {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 140px;
+            z-index: 100;
+        }
+
+        .socks2 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 300px;
+            z-index: 100;
+        }
+
+        .socks3 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 500px;
+            z-index: 100;
+        }
+
+        .socks4 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 700px;
+            z-index: 100;
+        }
+
+        .socks5 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 900px;
+            z-index: 100;
+        }
+
+        .socks6 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 1100px;
+            z-index: 100;
+        }
+
+        .socks7 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 1320px;
+            z-index: 100;
+        }
+
+        .socks8 {
+            height: 100px;
+            position: fixed;
+            top: 70px;
+            left: 1540px;
+            z-index: 100;
+        }
+
+        .title {
+            font-size: 70px;
+            position: absolute;
+            font-family: Cursive;
+            top: 150px;
+            left: 700px;
+        }
+
+        .text1 {
+            font-size: 40px;
+            font-family: Cursive;
+            width: 1650px;
+            position: absolute;
+            top: 300px;
+            left: 155px;
+        }
+
+        .text2 {
+            position: absolute;
+            font-family: Cursive;
+            font-size: 30px;
+            top: 600px;
+            width: 1600px;
+            left: 160px;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            height: 400px;
+            width: 600px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .photos {
+            position: absolute;
+            top: 2400px;
+            left: 300px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="images\ApplicationFrameHost_w80C3R610L-removebg-preview.png" alt="" />
+        <a class="section" href="second_page.html">Начало</a>
+        <a class="section" href="third_page.html">Традиции</a>
+        <a class="section" href="forth_page.html">Ястия</a>
+        <a class="section" href="fifth_page.html">По света</a>
+    </div>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+
+    <script src="Clock\clock.js"></script>
+
+    <div class="sidebar_left"></div>
+
+    <div class="sidebar_right"></div>
+
+    <div class="socks_section">
+        <img class="socks" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks2" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks3" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks4" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks5" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks6" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks7" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks8" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="stars" src="images\transparent-stars-background-11.png" alt="">
+        <img class="stars1" src="images\transparent-stars-background-11.png" alt="">
+    </div>
+
+    <h1 class="title">Коледа по света</h1>
+    <p class="text1">От незапомнени времена милиони хора по света отбелязват Коледа. Корените на този обичай се губят в
+        дълбоката
+        древност. Всяка страна има своя специфична традиция, наред с която в наши дни се утвърждават и все повече общи
+        символи на празника.
+    </p>
+    <p class="text2">В южната ни съседка <span style="color: red;">Гърция</span> почитат свети Никола като закрилник на
+        моряците.
+        Легендите го описват като побелял
+        старец, носещ мокри дрехи, от чиято брада капе морска пияна. Неговият образ е прототип на модерния Дядо Коледа.
+        <br><br>
+
+        В <span style="color: red;">Германия</span> коледната подготовка започва още в нощта преди 6 декември. Децата
+        оставят обувките си пред вратата, а
+        на сутринта послушните ги намират пълни с лакомства, а по-палавите със съчки вместо сладки. Германците вярват,
+        че Христос праща своите ангели да обикалят Земята в цялата нощ, за това традицията повелява децата да се обличат
+        в бяло и да обикалят къщите за здраве и късмет.<br><br>
+
+        Празненствата в <span style="color: red;">Италия</span> започват 8 дни пред Коледа, но големите подаръци се
+        раздават на 6-ти януари. Тогава с
+        метлата си долита милата, но грозновата магьосница Бефана, която раздава подаръците. На непослушните деца се
+        полага само по парченце въглен, но захарен.<br><br>
+
+        В <span style="color: red;">Холандия</span> традицията свързват със Свети Николаус, който акостира на
+        холандските брегове още през ноември. През
+        лятото той има испански адрес и резиденция, в която води записки кои деца слушат и кои не. А наближи ли Коледа и
+        стъпи ли на сушата, той се качва на бял кон и язди из града за радост на малки и големи.<br><br>
+
+        В навечерието на Коледа във <span style="color: red;">Финландия</span>има по-необичайна традиция. Всички от
+        семейството отиват на сауна, за да
+        седнат чисти на масата. Празничната вечеря започва, когато изгрее първата звезда в небето. <br><br>
+
+        Вместо с шейни на снега, <span style="color: red;">Австралия</span> по-скоро празнуват Коледа с бански на плажа.
+        Температурите при тях рядко
+        падат под 30 градуса по това време от годината. Дядо Коледа в Австралия задължително идва със сърф.<br><br>
+
+        За разлика от Австралия, <span style="color: red;">Канада</span> е една от редките страни, където задължително
+        ще отпразнувате Коледа в бяло - с
+        много сняг и... елени. Малки групи, преоблечени хора ходят по домовете, дрънчейки със звънци. Наричат ги
+        „маскирани коледари".<br><br>
+
+        Коледният период в <span style="color: red;">Дания</span> започва, когато палав елф на име Нисе реши да се
+        позабавлява. Датчаните вярват, че той
+        живее по таваните на стари фермерски къщи, а любимото му занимание е да погажда номера. Угощението на Бъдни
+        вечер започва с оризов пудинг, в който е скрит „вълшебен бадем". Традицията изненадващо наподобява нашата пита с
+        паричка.<br><br>
+
+        Според преданията <span style="color: red;">чешкият</span> Дядо Коледа се спуска от небето по златно въже,
+        следван от един ангел и един дявол.
+        Младите момичета в Чехия гадаят бъдещето си, като на 4 декември поставят черешова клонка във вода. Ако тя цъфне
+        до Коледа, следващата година ще срещнат съпруга си.<br><br>
+
+        В <span style="color: red;">Англия</span> вярват в традиционния вариант на Дядо Коледа, облечен с дълга червена
+        или зелена роба. Докато всички
+        спят, той обикаля домовете и оставя подаръци в празни чорапи, закачени около огнището.
+    </p>
+    <div class="photos">
+        <div class="gallery">
+            <a target="_blank" href="chrismas_images\318374.jpg">
+                <img src="chrismas_images\318374.jpg" alt="" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="chrismas_images\318381.jpg">
+                <img src="chrismas_images\318381.jpg" alt="" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="chrismas_images\1609552.jpg">
+                <img src="chrismas_images\1609552.jpg" alt="" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="chrismas_images\48364349_1928602494114102_8318534569183674368_o.jpg">
+                <img src="chrismas_images\48364349_1928602494114102_8318534569183674368_o.jpg" alt="" width="600"
+                    height="400">
+            </a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

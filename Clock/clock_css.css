@@ -1,0 +1,54 @@
+body{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(https://wallpaperaccess.com/full/1617920.jpg);
+}
+h2{
+    display: flex;
+    text-shadow: 2px 2px 4px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    
+
+}
+.clock{
+    display: flex;
+    margin-right: 100px;
+
+}
+.clock div{
+    margin: 5px;  
+    margin-right: 22px;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: transparent;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px;
+}
+.clock .text{
+    height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+.clock #ampm{
+    position: absolute;
+    
+}

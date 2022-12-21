@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Традиции</title>
+    <style>
+        .clock {
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+      margin-top: 300px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      position: fixed;
+      color: white;
+      font-family: Cursive;
+    }
+
+    .clock span {
+      width: 100px;
+      height: 80px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .clock .text {
+      height: 30px;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+
+    }
+
+    .clock #ampm {
+      position: absolute;
+
+    }
+
+    body {
+      height: auto;
+      background-color: bisque;
+    }
+
+    .header {
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      height: 80px;
+      border-style: solid;
+      border-width: 1px;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      box-shadow: 2px 5px 10px darkgreen;
+      border-color: darkgreen;
+      z-index: 100;
+    }
+
+    .logo {
+      height: 80px;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+    .section {
+      font-size: 30px;
+      font-family: Cursive;
+      margin-top: 30px;
+      margin-left: 50px;
+      color: white;
+    }
+
+    .sidebar_left {
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      top: 80px;
+      width: 150px;
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      box-shadow: 2px 5px 10px darkgreen;
+    }
+
+    .sidebar_right {
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      top: 80px;
+      width: 150px;
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      box-shadow: 2px 5px 10px darkgreen;
+    }
+
+    .socks {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 140px;
+      z-index: 100;
+    }
+
+    .socks2 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 300px;
+      z-index: 100;
+    }
+
+    .socks3 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 500px;
+      z-index: 100;
+    }
+
+    .socks4 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 700px;
+      z-index: 100;
+    }
+
+    .socks5 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 900px;
+      z-index: 100;
+    }
+
+    .socks6 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1100px;
+      z-index: 100;
+    }
+
+    .socks7 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1320px;
+      z-index: 100;
+    }
+
+    .socks8 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1540px;
+      z-index: 100;
+    }
+
+        .title {
+            font-size: 70px;
+            position: absolute;
+            font-family: Cursive;
+            top: 100px;
+            left: 200px;
+
+        }
+
+        .image1 {
+            position: absolute;
+            top: 280px;
+            left: 430px;
+        }
+
+        .text {
+            position: absolute;
+            top: 825px;
+            left: 920px;
+            font-family: Cursive;
+            font-size: 20px;
+        }
+
+        .text2 {
+            position: absolute;
+            font-family: Cursive;
+            font-size: 30px;
+            top: 900px;
+            left: 170px;
+            width: 1600px;
+            text-align: left;
+        }
+
+        .image2 {
+            position: absolute;
+            top: 1200px;
+            left: 200px;
+        }
+
+        .text3 {
+            position: absolute;
+            top: 1157px;
+            left: 900px;
+            font-family: Cursive;
+            font-size: 30px;
+            width: 800px;
+        }
+
+        .text3::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .text2::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .text4::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .image3 {
+            position: absolute;
+            top: 2200px;
+            right: 200px;
+        }
+
+        .text4 {
+            position: absolute;
+            top: 2180px;
+            left: 200px;
+            font-family: Cursive;
+            font-size: 30px;
+            width: 800px;
+        }
+
+        .stars {
+            position: absolute;
+            left: 220px;
+        }
+
+        .stars1 {
+            position: absolute;
+            top: 1400px;
+            left: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="images\ApplicationFrameHost_w80C3R610L-removebg-preview.png" alt="" />
+        <a class="section" href="second_page.html">Начало</a>
+        <a class="section" href="third_page.html">Традиции</a>
+        <a class="section" href="forth_page.html">Ястия</a>
+        <a class="section" href="fifth_page.html">По света</a>
+      </div>
+      <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    
+    <script src="Clock\clock.js"></script>
+    
+      <div class="sidebar_left"></div>
+    
+      <div class="sidebar_right"></div>
+    
+      <div class="socks_section">
+        <img class="socks" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks2" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks3" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks4" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks5" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks6" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks7" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="socks8" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+        <img class="stars" src="images\transparent-stars-background-11.png" alt="">
+        <img class="stars1" src="images\transparent-stars-background-11.png" alt="">
+      </div>
+    <h1 class="title">Българските традиции и обичаи на Коледа</h1>
+    <div>
+        <img class="image1" src="images/ezgif-5-96007aaaf4.jpg" alt="">
+        <p class="text">Коледари от Софийско, Централен държавен архив</p>
+    </div>
+
+    <p class="text2">Според народната вяра в полунощ на Бъдни вечер настъпва най-святият ден в годината - Рождество
+        Христово. Празникът продължава 3 дни - от 25-ти до 27-ми декември. Дни, които са изпълнени с много вяра. Дни,
+        посветени на семейството, на дома. Дни, които ние, българите, свързваме с много традиции и обичаи. Едни, които
+        познаваме от разказите на бабите и дядовците ни и други, които са запазени и до днес. И всички те, изпълнени с
+        много смисъл и християнска вяра. Нека ги разгледаме в следващите редове. </p>
+
+    <img class="image2" src="images\ezgif-5-814aff2025.jpg" alt="">
+    <p class="text3">В миналото, рано сутринта на 25-ти, още след първи петли, мъжете отивали в оборите и кошарите, за
+        да сложат сено или слама на добитъка. И след като чуят да бие клепалото на църквата, всички се пременяли с нови
+        дрехи и отивали на празнична литургия. След литургията, всички се прибирали в къщите си и зачаквали
+        “колежниците” - коледарите. Коледарската група била на брой между 10 и 12 момчета, които си имали и водител,
+        който в различните краища на България наричали различно - “станеник” или “цар”. Обикновено, коледарите се
+        избирали още в началото на Коледните пости, в някои краища пък на Игнажден. И когато вече коледарската група е
+        оформена, започвали да се събират да разучават коледарските песни, едната вечер в къщата на единия от тях,
+        другата вечер в къщата на другия. И така до Коледа, когато се обличали в най-новите си дрехи и отгоре им
+        намятали ямурлуци. Важен елемент в облеклото им били калпаците, който се украсявали богато с чимширови китки,
+        пуканки и сушени плодове, нанизани на червен конец. Така пременени, коледарите започвали да обикалят всички къщи
+        в селото с коледарски песни.
+    </p>
+
+    <img class="image3" src="images\ezgif-1-9411a1eea0.jpg" alt="">
+    <p class="text4">На тръгване от дома, коледарите били богато дарявани от стопаните на къщата с колаци, месо, боб,
+        лук, брашно, орехи, вино и така нататък, а също и с пари. След посещението на коледарите, всички се събирали на
+        празничната трапеза. За разлика от постните ястия на Бъдни
+        вечер коледната трапеза е богата на местни ястия. Едно от традиционните коледни ястия е пуйка със зеле.Прави се
+        също и капама. Поднасят се сарми, туршия, баница и много други неща. В заключение може да се каже, че трапезата
+        е различна в зависимост от специфичностите на района. Хората спазвали и редица забрани, които започвали от
+        Коледа (началото на т.нар “мръсни дни”) и свършвали на Йордановден (когато е краят на Мръсните дни). Забранено
+        било да се излиза нощем. Хората вярвали, че ако пипат вълна, вълци щели да им нападат стадата през годината,
+        затова работата с вълна била забранена. Също, на този ден, не изхвърляли в дворовете пепелта от печките, за да
+        не я ближат караконджолите и така да се размножават. </p>
+</body>
+
+
+</html>

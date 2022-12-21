@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ястия</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .clock {
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+      margin-top: 300px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      position: fixed;
+      color: white;
+      font-family: Cursive;
+    }
+
+    .clock span {
+      width: 100px;
+      height: 80px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .clock .text {
+      height: 30px;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+
+    }
+
+    .clock #ampm {
+      position: absolute;
+
+    }
+
+    body {
+      height: auto;
+      background-color: bisque;
+    }
+
+    .header {
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      height: 80px;
+      border-style: solid;
+      border-width: 1px;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      box-shadow: 2px 5px 10px darkgreen;
+      border-color: darkgreen;
+      z-index: 100;
+    }
+
+    .logo {
+      height: 80px;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+    .section {
+      font-size: 30px;
+      font-family: Cursive;
+      margin-top: 30px;
+      margin-left: 50px;
+      color: white;
+    }
+
+    .sidebar_left {
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      top: 80px;
+      width: 150px;
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      box-shadow: 2px 5px 10px darkgreen;
+    }
+
+    .sidebar_right {
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      top: 80px;
+      width: 150px;
+      background-image: url("images/istockphoto-1285159499-612x612.jpg");
+      box-shadow: 2px 5px 10px darkgreen;
+    }
+
+    .socks {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 140px;
+      z-index: 100;
+    }
+
+    .socks2 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 300px;
+      z-index: 100;
+    }
+
+    .socks3 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 500px;
+      z-index: 100;
+    }
+
+    .socks4 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 700px;
+      z-index: 100;
+    }
+
+    .socks5 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 900px;
+      z-index: 100;
+    }
+
+    .socks6 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1100px;
+      z-index: 100;
+    }
+
+    .socks7 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1320px;
+      z-index: 100;
+    }
+
+    .socks8 {
+      height: 100px;
+      position: fixed;
+      top: 70px;
+      left: 1540px;
+      z-index: 100;
+    }
+
+    .title {
+      font-size: 70px;
+      position: absolute;
+      font-family: Cursive;
+      top: 150px;
+      left: 830px;
+    }
+
+    .title_salad {
+      font-size: 50px;
+      position: absolute;
+      font-family: Cursive;
+      top: 300px;
+      left: 200px;
+    }
+
+    .salad1 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 400px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .salad1_image {
+      height: 400px;
+      position: absolute;
+      top: 350px;
+      left: 1240px;
+      border-radius: 200px;
+    }
+
+    .salad2 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 800px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .salad2_image {
+      height: 400px;
+      position: absolute;
+      top: 770px;
+      left: 1240px;
+      border-radius: 200px;
+    }
+
+    .title_main {
+      font-size: 50px;
+      position: absolute;
+      font-family: Cursive;
+      top: 1100px;
+      left: 200px;
+    }
+
+    .main1 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 1210px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .main1_image {
+      height: 400px;
+      position: absolute;
+      top: 1185px;
+      left: 1240px;
+      border-radius: 200px;
+      width: 450px;
+    }
+
+    .main2 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 1600px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .main2_image {
+      height: 400px;
+      position: absolute;
+      top: 1600px;
+      left: 1240px;
+      border-radius: 200px;
+      width: 450px;
+    }
+
+    .title_dessert {
+      font-size: 50px;
+      position: absolute;
+      font-family: Cursive;
+      top: 2000px;
+      left: 200px;
+    }
+
+    .dessert1 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 2120px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .dessert1_image {
+      height: 400px;
+      position: absolute;
+      top: 2100px;
+      left: 1240px;
+      border-radius: 200px;
+      width: 450px;
+    }
+
+    .dessert2 {
+      position: absolute;
+      font-family: Cursive;
+      font-size: 30px;
+      top: 2650px;
+      width: 1000px;
+      left: 200px;
+    }
+
+    .dessert2_image {
+      height: 400px;
+      position: absolute;
+      top: 2600px;
+      left: 1240px;
+      border-radius: 200px;
+      width: 450px;
+    }
+
+    .stars {
+      position: absolute;
+      left: 220px;
+    }
+
+    .stars1 {
+      position: absolute;
+      top: 1400px;
+      left: 220px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="images\ApplicationFrameHost_w80C3R610L-removebg-preview.png" alt="" />
+    <a class="section" href="second_page.html">Начало</a>
+    <a class="section" href="third_page.html">Традиции</a>
+    <a class="section" href="forth_page.html">Ястия</a>
+    <a class="section" href="fifth_page.html">По света</a>
+  </div>
+  <div class="clock">
+    <div>
+        <span id="hour">00</span>
+        <span class="text">Hours</span>
+    </div>
+    <div>
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+    </div>
+    <div>
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+    </div>
+    <div>
+        <span id="ampm">AM</span>
+    </div>
+</div>
+
+<script src="Clock\clock.js"></script>
+
+  <div class="sidebar_left"></div>
+
+  <div class="sidebar_right"></div>
+
+  <div class="socks_section">
+    <img class="socks" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks2" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks3" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks4" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks5" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks6" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks7" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="socks8" src="images/ezgif-3-4655b93836-removebg-preview.png" alt="" />
+    <img class="stars" src="images\transparent-stars-background-11.png" alt="">
+    <img class="stars1" src="images\transparent-stars-background-11.png" alt="">
+  </div>
+  <h1 class="title">Ястия</h1>
+  <h2 class="title_salad">Салати</h2>
+  <p class="salad1">
+    Салатата от кисело зеле е една от най-свежите зимни салати. По Коледа
+    киселото зеле точно е втасало и е много вкусно. Кисело зеле се намира във
+    всяка българска къща през зимата, което прави салатата от кисело зеле
+    универсално решение на въпроса "каква зимна салата да приготвя?" Освен
+    това салатата от кисело зеле се приготвя изключително бързо и е много
+    икономична.
+  </p>
+  <img class="salad1_image" src="images\salata_ot_kiselo_zele_2.jpg" alt="" />
+  <p class="salad2">
+    Класическата картофена салата е едно от най-универсалните ястия. И на
+    трапезата на Коледа класическата картофена салата може да влезе в различни
+    роли. Картофената салата може да бъде ползвана по своето основно
+    предназначение - като салата. Но картофената салата може да ползвате и
+    като гарнитура за пържолите, кюфтетата или кебапа.
+  </p>
+  <img class="salad2_image" src="images\klasicheska_kartofena_salata_1.jpg" alt="" />
+  <h2 class="title_main">Основно</h2>
+  <p class="main1">
+    Кога, ако не на Коледа да приготвим свински пържоли? Свинските пържоли на
+    фурна също се приготвят много лесно, а полученият резултат е много вкусен.
+    Приготвени по тази рецепта пържолите стават сочни и крехки. Допълнените ли
+    пържолата с класическата картофена салата получавате перфектната порция!
+  </p>
+  <img class="main1_image" src="images\krehki_svinski_purjoli_na_furna_1.jpg" alt="" />
+  <p class="main2">
+    По Коледа зелето точно е станало и чака да стане на сармички! Трябва ли да
+    чакаме Нова година, за да приготвим първите зелеви сарми? Не трябва!
+    Зелевите сарми в гювеч са изключително подходящи за трапезата на Коледа и
+    със сигурност ще зарадват всички присъстващи. Големият плюс на зелевите
+    сарми е, че може винаги да ги комбинирате с някое от другите основни ястия
+    за Коледа, без да се притеснявате, че порциите ще станат твърде големи!
+  </p>
+  <img class="main2_image" src="images\surmi.jpg" alt="" />
+  <h2 class="title_dessert">Десерт</h2>
+  <p class="dessert1">
+    Рецептата за меденки е една от най-обичаните рецепти за Коледа. Меденките
+    са още един от задължителните елементи в коледното меню. Ако не
+    задължителни, то поне очаквани! А тъй като меденките са едни от
+    най-лесните за приготвяне дребни сладки, всеки може да намери малко време
+    за да ги приготви, за да зарадва домашните и своите гости. Ако пък слепите
+    меденките с конфитюр от сини сливи, или конфитюр от малини например, ще
+    станат наистина неустоими! Меденките са идеален десерт за коледа, който
+    може да бъде сервиран в края на Коледния обяд с чаша кафе или чай.
+  </p>
+  <img class="dessert1_image" src="images\medenka.jpg" alt="" />
+  <p class="dessert2">
+    Всички рецепти за сладкиши с ябълки са подходящи за Коледната трапеза
+    рецепти, тъй като ябълките най-често се комбинират с канела и орехи -
+    класически коледни аромати. Рецептата за сладкиш с бисквити и ябълки e
+    една от най-лесните рецепти за сладкиши, приготвя се бързо, което я
+    превръща в много подходяща за Коледа рецепта, тъй като на връх празника
+    времето често не стига.
+  </p>
+  <img class="dessert2_image" src="images\sladkish_s_biskviti_i_yabalki_1.jpg" alt="">
+
+</body>
+
+</html>
